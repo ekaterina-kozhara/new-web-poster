@@ -30,6 +30,7 @@
 	setTimeout(function(){
 			$( ".miniLogo" ).css( {"margin-right": "200px" } )
 			$( ".miniLogo" ).css( {"letter-spacing": "0.4em" } )
+			$( ".miniLogo" ).css( {"font-family": "Sansation_Bold" } )
 			$( ".miniLogo" ).css( {"transition": "1s"} )
 	}, 4700);
 
