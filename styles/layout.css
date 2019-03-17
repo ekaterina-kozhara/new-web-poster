@@ -2,8 +2,20 @@ body {
   overflow: hidden;
 }
 
+img {
+  opacity: 0;
+  filter: grayscale(100%);
+  filter: gray;
+  transition: all 1s;
+}
+
+img:hover {
+  filter: none;
+  transform: rotate(380deg);
+}
+
 .background {
-  z-index: -20;
+  z-index: -70;
   width: 100vw;
   height: 100vw;
   position: absolute;
@@ -61,4 +73,39 @@ p.miniLogo {
   position: absolute;
   justify-content: flex-end;
   align-items: center;
+}
+
+.concert, .send, .food, .piano {
+  position: absolute;
+}
+
+.concert {
+  left: -20%;
+  top: 35%;
+  width: 70%;
+  transform: rotate(30deg);
+}
+
+.food {
+  z-index: 1;
+  right: -2%;
+  top: -40%;
+  width: 55%;
+  transform: rotate(24deg);
+}
+
+.piano {
+  z-index: 2;
+  right: -20%;
+  top: -5%;
+  width: 50%;
+  transform: rotate(-130deg);
+}
+
+.send {
+  z-index: 3;
+  right: -6%;
+  top: -24%;
+  width: 30%;
+  transform: rotate(10deg);
 }
