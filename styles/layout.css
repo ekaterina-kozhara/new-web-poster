@@ -11,7 +11,7 @@ img {
 
 img:hover {
   filter: none;
-  transform: rotate(380deg);
+  transform: scale(1.1);
 }
 
 .background {
