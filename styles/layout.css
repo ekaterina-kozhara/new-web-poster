@@ -32,7 +32,7 @@ p {
 
 .blinkingCircle {
   cursor: pointer;
-  z-index: 2;
+  z-index: 10;
   background-color: red;
   width: 45px;
   height: 45px;
@@ -41,7 +41,7 @@ p {
 
 .blinkingCircle2 {
   opacity: 0;
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   background-color: red;
   width: 45px;
@@ -49,7 +49,12 @@ p {
   border-radius: 50%;
 }
 
+main {
+  overflow: hidden;
+}
+
 .toCenter {
+  overflow: hidden;
   z-index: 2;
   position: absolute;
   width: 100%;
@@ -70,6 +75,7 @@ p {
 }
 
 p.miniLogo {
+  z-index: 3;
   margin-right: -7px;
   font-family: "Sansation_Light";
   margin-top: 120px;
@@ -92,14 +98,14 @@ p.miniLogo {
 }
 
 .concert {
-  left: -20%;
-  top: 35%;
+  left: -23%;
+  top: 39%;
   width: 70%;
   transform: rotate(30deg);
 }
 
 .food {
-  z-index: 1;
+  z-index: 3;
   right: -2%;
   top: -40%;
   width: 55%;
@@ -107,7 +113,7 @@ p.miniLogo {
 }
 
 .piano {
-  z-index: 2;
+  z-index: 4;
   right: -20%;
   top: -5%;
   width: 50%;
@@ -115,9 +121,77 @@ p.miniLogo {
 }
 
 .send {
-  z-index: 3;
+  z-index: 5;
   right: -6%;
   top: -10%;
   width: 30%;
   transform: rotate(10deg);
+}
+
+.line {
+  display: none;
+  z-index: 1;
+  /* top: -30%; */
+  left: -3%;
+  position: absolute;
+  width: 500%;
+}
+
+.circleDown {
+  opacity: 0;
+  z-index: -40;
+  position: absolute;
+  left: -9%;
+  bottom: -40%;
+}
+
+.circleUp {
+  opacity: 0;
+}
+
+.circle1 {
+  opacity: 0;
+  z-index: -40;
+  background-color: red;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+}
+
+p.circleWords {
+  opacity: 0;
+  z-index: -30;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 89px;
+  color: #FFFFFF;
+  left: 23%;
+  bottom: 44%;
+}
+
+.circle2 {
+  background-color: red;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  z-index: 10;
+  position: absolute;
+  right: 0%;
+  top: -46%;
+}
+
+p.circleWords2 {
+  z-index: -30;
+  text-align: right;
+  z-index: 13;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 89px;
+  color: #FFFFFF;
+  right: 7%;
+  top: -1%;
 }
