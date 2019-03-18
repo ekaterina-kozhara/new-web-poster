@@ -204,8 +204,8 @@ p.circleWords2 {
   opacity: 0;
   /* z-index: 400; */
   position: absolute;
-  right: -4%;
-  margin-top: 35%;
+  right: -5%;
+  margin-top: 40%;
   width: 20%;
   transform: rotate(-90deg);
 
