@@ -60,6 +60,10 @@ $( ".concert" ).click(function() {
 	$( ".circleDown" ).css( {"z-index": "100" } )
 	$( ".logo" ).css( {"opacity": "1" } )
 	$( ".logo" ).css( {"z-index": "400" } )
+	// setTimeout(function(){
+	// 	$( "back" ).css( {"background-color": "#1E1E1E" }, 3000 )
+	// 	$( ".blinkingCircle2" ).css( {"opacity": "0" } )
+	// })
 
 })
 
@@ -74,9 +78,7 @@ $( ".send, .piano, .food" ).click(function() {
 	$( ".circleUp" ).css( {"z-index": "200" } )
 })
 
-// setTimeout(function(){
-// 	$( "back" ).css( {"background-color": "#1E1E1E" }, 7000 )
-// })
+
 
 
 

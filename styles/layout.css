@@ -3,14 +3,14 @@ body {
   background-color: #1E1E1E;
 }
 
-img {
+.toCenter img {
   filter: gray;
   filter: grayscale(100%);
   opacity: 0;
   transition: all 1s;
 }
 
-img:hover {
+.toCenter img:hover {
   filter: none;
   transition: all 1s;
   transform: scale(1.1);
@@ -19,7 +19,7 @@ img:hover {
 /* .background {
   z-index: -70;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   position: absolute;
   background-color: #1E1E1E;
 } */
@@ -193,11 +193,11 @@ p.circleWords2 {
   position: absolute;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 4rem;
+  font-size: 3.6rem;
   line-height: 89px;
   color: #FFFFFF;
   right: 7%;
-  top: -1%;
+  top: 1%;
 }
 
 .logo {
@@ -205,7 +205,7 @@ p.circleWords2 {
   /* z-index: 400; */
   position: absolute;
   right: -7%;
-  margin-top: 50%;
+  margin-top: 35%;
   width: 20%;
   transform: rotate(-90deg);
 
