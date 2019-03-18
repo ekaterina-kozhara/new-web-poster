@@ -43,22 +43,39 @@ $( ".blinkingCircle" ).click(function() {
 			$( ".miniLogo" ).css( {"transition": "1s"} )
 	}, 4000);
 
-	setTimeout(function(){
-			$( ".concert, .food, .piano, .send" ).css( {"opacity": "1" } )
-			$( ".concert, .food, .piano, .send" ).css( {"transition": "4s"} )
-	}, 6000);
+setTimeout(function(){
+		$( ".concert, .food, .piano, .send" ).css( {"opacity": "1" } )
+		$( ".concert, .food, .piano, .send" ).css( {"transition": "4s"} )
+}, 6000);
 })
 
 $( ".concert" ).click(function() {
 	$( ".concert" ).css( {"opacity": "0"} )
+	$( ".concert" ).css( {"transition": "0.5s"} )
 	$( ".circle1" ).css( {"opacity": "1" } )
+	$( ".circle1" ).css( {"z-index": "100" } )
 	$( ".circleWords" ).css( {"opacity": "1" } )
+	$( ".circleWords" ).css( {"z-index": "100" } )
 	$( ".circleDown" ).css( {"opacity": "1" } )
+	$( ".circleDown" ).css( {"z-index": "100" } )
 })
 
 $( ".send, .piano, .food" ).click(function() {
-	$( ".send, .piano, .food" ).css( {"opacity": "0"} )	
+	$( ".send, .piano, .food" ).css( {"opacity": "0"} )
+	$( ".send, .piano, .food" ).css( {"transition": "0.5s"} )
+	$( ".circle2" ).css( {"opacity": "1" } )
+	$( ".circle2" ).css( {"z-index": "100" } )
+	$( ".circleWords2" ).css( {"opacity": "1" } )
+	$( ".circleWords2" ).css( {"z-index": "100" } )
+	$( ".circleUp" ).css( {"opacity": "1" } )
+	$( ".circleUp" ).css( {"z-index": "100" } )
 })
+
+// setTimeout(function(){
+// 	$( "back" ).css( {"background-color": "#1E1E1E" }, 7000 )
+// })
+
+
 
 // anime({
 //   targets: '.path',

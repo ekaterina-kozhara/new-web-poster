@@ -1,5 +1,6 @@
 body {
   overflow: hidden;
+  background-color: #1E1E1E;
 }
 
 img {
@@ -12,15 +13,16 @@ img {
 img:hover {
   filter: none;
   transition: all 1s;
+  transform: scale(1.1);
 }
 
-.background {
+/* .background {
   z-index: -70;
   width: 100vw;
   height: 100vw;
   position: absolute;
   background-color: #1E1E1E;
-}
+} */
 
 p {
   margin-bottom: 25px;
@@ -146,6 +148,7 @@ p.miniLogo {
 }
 
 .circleUp {
+  overflow: hidden;
   opacity: 0;
 }
 
@@ -164,7 +167,7 @@ p.circleWords {
   position: absolute;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 64px;
+  font-size: 62px;
   line-height: 89px;
   color: #FFFFFF;
   left: 23%;
@@ -178,8 +181,8 @@ p.circleWords {
   border-radius: 50%;
   z-index: 10;
   position: absolute;
-  right: 0%;
-  top: -46%;
+  margin-left: 742px;
+  margin-top: -28%;
 }
 
 p.circleWords2 {
