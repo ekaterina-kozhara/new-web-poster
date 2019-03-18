@@ -182,7 +182,7 @@ p.circleWords {
   border-radius: 50%;
   z-index: 10;
   position: absolute;
-  margin-left: 55%;
+  margin-left: 58%;
   margin-top: -28%;
 }
 
@@ -204,7 +204,7 @@ p.circleWords2 {
   opacity: 0;
   /* z-index: 400; */
   position: absolute;
-  right: -7%;
+  right: -4%;
   margin-top: 35%;
   width: 20%;
   transform: rotate(-90deg);
