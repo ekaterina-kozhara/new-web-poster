@@ -169,10 +169,10 @@ p.circleWords {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 3.875rem;
-  line-height: 89px;
+  line-height: 80px;
   color: #FFFFFF;
   left: 23%;
-  bottom: 44%;
+  bottom: 49%;
 }
 
 .circle2 {
@@ -182,7 +182,7 @@ p.circleWords {
   border-radius: 50%;
   z-index: 10;
   position: absolute;
-  margin-left: 742px;
+  margin-left: 55%;
   margin-top: -28%;
 }
 
