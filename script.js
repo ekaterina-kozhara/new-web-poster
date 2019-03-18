@@ -58,6 +58,9 @@ $( ".concert" ).click(function() {
 	$( ".circleWords" ).css( {"z-index": "100" } )
 	$( ".circleDown" ).css( {"opacity": "1" } )
 	$( ".circleDown" ).css( {"z-index": "100" } )
+	$( ".logo" ).css( {"opacity": "1" } )
+	$( ".logo" ).css( {"z-index": "400" } )
+
 })
 
 $( ".send, .piano, .food" ).click(function() {
@@ -68,7 +71,7 @@ $( ".send, .piano, .food" ).click(function() {
 	$( ".circleWords2" ).css( {"opacity": "1" } )
 	$( ".circleWords2" ).css( {"z-index": "100" } )
 	$( ".circleUp" ).css( {"opacity": "1" } )
-	$( ".circleUp" ).css( {"z-index": "100" } )
+	$( ".circleUp" ).css( {"z-index": "200" } )
 })
 
 // setTimeout(function(){
