@@ -1,8 +1,14 @@
 $( ".blinkingCircle" ).click(function() {
 	$(function(){
+				$( ".blinkingCircle" ).css( {"animation": "none" } )
 				$("#blinkingCircle").hide();
 				setTimeout(function(){$("#blinkingCircle").show();setInterval(function(){$("#blinkingCircle").toggle();},250)},1000);
 			});
+
+			setTimeout(function() {
+				console.log("test");
+				$( "body" ).css( {"background-color": "#FFE3E3" } )
+			}, 3500)
 
 	setTimeout(function(){
 	  $( ".blinkingCircle2" ).css( {"opacity": "1" } )
@@ -11,9 +17,15 @@ $( ".blinkingCircle" ).click(function() {
 		$( ".blinkingCircle2" ).css( "height", "3000" )
 		$( ".blinkingCircle2" ).css( {"transition": "1s"} )
 		$( ".blinkingCircle2" ).css( {"background-color": "#FFE3E3" } )
-		$( ".blinkingCircle2" ).css( {"z-index": "-60" } )
-  }, 4000);
+		// $( ".blinkingCircle2" ).css( {"z-index": "-60" } )
 
+  }, 3000);
+
+	setTimeout(function(){
+		$( ".blinkingCircle2" ).remove()
+		$( ".blinkingCircle" ).remove()
+		$( ".blinkingCircle2, .blinkingCircle" ).css( {"transition": "1s"} )
+  }, 6000);
 	// setTimeout(function(){
 	// 		$( ".line" ).css( {"display": "block" } )
 	// 		$( ".line" ).css( {"transition": "1s"} )
@@ -23,7 +35,7 @@ $( ".blinkingCircle" ).click(function() {
 
 	setTimeout(function(){
 			$( ".tracker" ).css( {"width": "110vw" } )
-	}, 4000);
+	}, 3000);
 
 	// setTimeout(function(){
 	// 		$( ".miniLogo" ).css( {"z-index": "4" } )
@@ -32,7 +44,7 @@ $( ".blinkingCircle" ).click(function() {
 	setTimeout(function(){
 	    $( ".first" ).css( {"display": "none" } )
 			$( ".first" ).css( {"transition": "3s"} )
-	}, 4000);
+	}, 3000);
 
 	setTimeout(function(){
 			$( ".miniLogo" ).css( {"margin-right": "200px" } )
@@ -41,12 +53,13 @@ $( ".blinkingCircle" ).click(function() {
 			$( ".miniLogo" ).css( {"font-family": "Sansation_Bold" } )
 			$( ".miniLogo" ).css( {"z-index": "4" } )
 			$( ".miniLogo" ).css( {"transition": "1s"} )
-	}, 4000);
+	}, 3000);
 
 setTimeout(function(){
 		$( ".concert, .food, .piano, .send" ).css( {"opacity": "1" } )
 		$( ".concert, .food, .piano, .send" ).css( {"transition": "4s"} )
-}, 6000);
+}, 5000);
+	 // document.body.style.overflowX = "visible"
 })
 
 $( ".concert" ).click(function() {
@@ -60,10 +73,7 @@ $( ".concert" ).click(function() {
 	$( ".circleDown" ).css( {"z-index": "100" } )
 	$( ".logo" ).css( {"opacity": "1" } )
 	$( ".logo" ).css( {"z-index": "400" } )
-	// setTimeout(function(){
-	// 	$( "back" ).css( {"background-color": "#1E1E1E" }, 3000 )
-	// 	$( ".blinkingCircle2" ).css( {"opacity": "0" } )
-	// })
+
 
 })
 
@@ -77,10 +87,6 @@ $( ".send, .piano, .food" ).click(function() {
 	$( ".circleUp" ).css( {"opacity": "1" } )
 	$( ".circleUp" ).css( {"z-index": "200" } )
 })
-
-
-
-
 
 // anime({
 //   targets: '.path',
