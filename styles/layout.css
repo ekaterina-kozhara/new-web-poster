@@ -2,6 +2,7 @@ body {
   overflow: hidden;
   overflow-y: hidden;
   background-color: #1E1E1E;
+  transition: all .4s ease;
 }
 
 .toCenter img {
@@ -233,4 +234,14 @@ p.circleWords2 {
   margin-top: 42%;
   width: 10%;
   transform: rotate(-90deg);
+}
+
+@media all and (max-width: 1750px) and (min-width: 200px) {
+  .tracker {
+    width: 75vw;
+  }
+
+  .slogan {
+    width: 75vw;
+  }
 }
