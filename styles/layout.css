@@ -7,7 +7,7 @@ body {
 .toCenter img {
   filter: gray;
   filter: grayscale(100%);
-  opacity: 0;
+  display: none;
   transition: all 1s;
 }
 
@@ -38,7 +38,7 @@ p {
 }
 
 .blinkingCircle2 {
-  opacity: 0;
+  display: none;
   z-index: -1;
   position: absolute;
   background-color: red;
@@ -101,7 +101,7 @@ main {
 
 .tracker {
   /* overflow: hidden; */
-  width: 80vw;
+  width: 60vw;
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -120,7 +120,7 @@ p.miniLogo {
 }
 
 .slogan {
-  width: 80vw;
+  width: 60vw;
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -166,20 +166,20 @@ p.miniLogo {
 
 
 .circleDown {
-  opacity: 0;
+  display: none;
   z-index: -40;
   position: absolute;
-  left: -9%;
-  bottom: -35%;
+  left: -6%;
+  bottom: -40%;
 }
 
 .circleUp {
   overflow: hidden;
-  opacity: 0;
+  display: none;
 }
 
 .circle1 {
-  opacity: 0;
+  display: none;
   z-index: -40;
   background-color: red;
   width: 800px;
@@ -188,7 +188,7 @@ p.miniLogo {
 }
 
 p.circleWords {
-  opacity: 0;
+  display: none;
   z-index: -30;
   position: absolute;
   font-family: 'Open Sans', sans-serif;
@@ -207,8 +207,8 @@ p.circleWords {
   border-radius: 50%;
   z-index: 10;
   position: absolute;
-  margin-left: 61%;
-  margin-top: -24%;
+  margin-left: 64%;
+  margin-top: -21%;
 }
 
 p.circleWords2 {
@@ -226,11 +226,11 @@ p.circleWords2 {
 }
 
 .logo {
-  opacity: 0;
+  display: none;
   /* z-index: 400; */
   position: absolute;
-  right: -5%;
-  margin-top: 45%;
-  width: 20%;
+  right: -3%;
+  margin-top: 42%;
+  width: 10%;
   transform: rotate(-90deg);
 }

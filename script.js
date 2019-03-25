@@ -1,22 +1,22 @@
 $( ".blinkingCircle" ).click(function() {
 	$(function(){
-				$( ".blinkingCircle" ).css( {"animation": "none" } )
+				$( ".blinkingCircle" ).css( {"animation": "none"} )
 				$("#blinkingCircle").hide();
 				setTimeout(function(){$("#blinkingCircle").show();setInterval(function(){$("#blinkingCircle").toggle();},250)},1000);
 			});
 
 			setTimeout(function() {
 				console.log("test");
-				$( "body" ).css( {"background-color": "#FFE3E3" } )
+				$( "body" ).css( {"background-color": "#FFE3E3"} )
 			}, 3500)
 
 	setTimeout(function(){
-	  $( ".blinkingCircle2" ).css( {"opacity": "1" } )
+	  $( ".blinkingCircle2" ).css( {"display": "block"} )
 	  $( ".blinkingCircle2" ).css( "width", "3000" )
 		$( ".blinkingCircle2" ).css( {"transition": "1s"} )
 		$( ".blinkingCircle2" ).css( "height", "3000" )
 		$( ".blinkingCircle2" ).css( {"transition": "1s"} )
-		$( ".blinkingCircle2" ).css( {"background-color": "#FFE3E3" } )
+		$( ".blinkingCircle2" ).css( {"background-color": "#FFE3E3"} )
 		// $( ".blinkingCircle2" ).css( {"z-index": "-60" } )
 
   }, 3000);
@@ -34,7 +34,7 @@ $( ".blinkingCircle" ).click(function() {
 	// }, 6000);
 
 	setTimeout(function(){
-			$( ".tracker" ).css( {"width": "110vw" } )
+			$( ".tracker" ).css( {"width": "110vw"} )
 	}, 3000);
 
 	// setTimeout(function(){
@@ -42,50 +42,50 @@ $( ".blinkingCircle" ).click(function() {
 	// }, 4000);
 
 	setTimeout(function(){
-	    $( ".first" ).css( {"display": "none" } )
+	    $( ".first" ).css( {"display": "none"} )
 			$( ".first" ).css( {"transition": "3s"} )
 	}, 3000);
 
 	setTimeout(function(){
-			$( ".miniLogo" ).css( {"margin-right": "200px" } )
-			$( ".miniLogo" ).css( {"margin-top": "70px" } )
-			$( ".miniLogo" ).css( {"letter-spacing": "0.4em" } )
-			$( ".miniLogo" ).css( {"font-family": "Sansation_Bold" } )
-			$( ".miniLogo" ).css( {"z-index": "4" } )
+			$( ".miniLogo" ).css( {"margin-right": "350px"} )
+			$( ".miniLogo" ).css( {"margin-top": "70px"} )
+			$( ".miniLogo" ).css( {"letter-spacing": "0.1em"} )
+			$( ".miniLogo" ).css( {"font-family": "Sansation_Bold"} )
+			$( ".miniLogo" ).css( {"z-index": "4"} )
 			$( ".miniLogo" ).css( {"transition": "1s"} )
 	}, 3000);
 
 setTimeout(function(){
-		$( ".concert, .food, .piano, .send" ).css( {"opacity": "1" } )
+		$( ".concert, .food, .piano, .send" ).css( {"display": "block"} )
 		$( ".concert, .food, .piano, .send" ).css( {"transition": "4s"} )
 }, 5000);
 	 // document.body.style.overflowX = "visible"
 })
 
 $( ".concert" ).click(function() {
-	$( ".concert" ).css( {"opacity": "0"} )
+	$( ".concert" ).css( {"display": "none"} )
 	$( ".concert" ).css( {"transition": "0.5s"} )
-	$( ".circle1" ).css( {"opacity": "1" } )
-	$( ".circle1" ).css( {"z-index": "100" } )
-	$( ".circleWords" ).css( {"opacity": "1" } )
-	$( ".circleWords" ).css( {"z-index": "100" } )
-	$( ".circleDown" ).css( {"opacity": "1" } )
-	$( ".circleDown" ).css( {"z-index": "100" } )
-	$( ".logo" ).css( {"opacity": "1" } )
-	$( ".logo" ).css( {"z-index": "400" } )
+	$( ".circle1" ).css( {"display": "block"} )
+	$( ".circle1" ).css( {"z-index": "100"} )
+	$( ".circleWords" ).css( {"display": "block"} )
+	$( ".circleWords" ).css( {"z-index": "100"} )
+	$( ".circleDown" ).css( {"display": "block" } )
+	$( ".circleDown" ).css( {"z-index": "100"} )
+	$( ".logo" ).css( {"display": "block"} )
+	$( ".logo" ).css( {"z-index": "400"} )
 
 
 })
 
 $( ".send, .piano, .food" ).click(function() {
-	$( ".send, .piano, .food" ).css( {"opacity": "0"} )
+	$( ".send, .piano, .food" ).css( {"display": "none"} )
 	$( ".send, .piano, .food" ).css( {"transition": "0.5s"} )
-	$( ".circle2" ).css( {"opacity": "1" } )
-	$( ".circle2" ).css( {"z-index": "100" } )
-	$( ".circleWords2" ).css( {"opacity": "1" } )
-	$( ".circleWords2" ).css( {"z-index": "100" } )
-	$( ".circleUp" ).css( {"opacity": "1" } )
-	$( ".circleUp" ).css( {"z-index": "200" } )
+	$( ".circle2" ).css( {"display": "block"} )
+	$( ".circle2" ).css( {"z-index": "100"} )
+	$( ".circleWords2" ).css( {"display": "block"} )
+	$( ".circleWords2" ).css( {"z-index": "100"} )
+	$( ".circleUp" ).css( {"display": "block"} )
+	$( ".circleUp" ).css( {"z-index": "200"} )
 })
 
 // anime({
